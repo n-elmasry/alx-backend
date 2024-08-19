@@ -2,7 +2,6 @@
 """Server"""
 
 import csv
-import math
 from typing import List, Tuple
 
 
