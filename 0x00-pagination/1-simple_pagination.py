@@ -40,6 +40,6 @@ class Server:
         if start > len(self.dataset()):
             return []
 
-        info = self.__dataset[start:min(end, len(self.__dataset))]
+        info = self.dataset()
 
-        return info
+        return info[start:end]
