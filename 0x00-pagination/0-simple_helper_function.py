@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """index_range"""
 
-import requests
 from typing import Tuple
 
 
