@@ -6,11 +6,8 @@ from typing import List, Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
-    """Retrieves the index range from a given page and page size.
-    """
-    start = (page - 1) * page_size
-    end = start + page_size
-    return (start, end)
+    """return a tuple of size two containing a start index and an end index"""
+    return ((page - 1) * page_size, page * page_size)
 
 
 class Server:
@@ -40,7 +37,8 @@ class Server:
         assert type(page) == int and type(page_size) == int
         assert page > 0 and page_size > 0
         start, end = index_range(page, page_size)
-        data = self.dataset()
-        if start > len(data):
+
+        info = self.dataset()
+        if start > len(info):
             return []
-        return data[start:end]
+        return info[start:end]
