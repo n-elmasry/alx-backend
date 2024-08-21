@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""FIFOCache"""
+"""First-In First-Out caching module.
+"""
 from base_caching import BaseCaching
 
 
