@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""LIFOCache"""
-
+"""Last-In First-Out caching module.
+"""
 from base_caching import BaseCaching
 
 from collections import OrderedDict
