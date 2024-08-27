@@ -41,7 +41,7 @@ def before_request():
 
 
 @babel.localeselector
-def get_locale():
+def get_locale() -> str:
     """Determine the best match with our supported languages"""
     user = getattr(g, 'user', None)
     if user:
